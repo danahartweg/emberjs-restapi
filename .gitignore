@@ -2,6 +2,8 @@
 *.rbc
 .bundle
 .config
+*.esproj
+.DS_STORE
 coverage
 InstalledFiles
 lib/bundler/man

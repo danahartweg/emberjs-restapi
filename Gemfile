@@ -8,3 +8,6 @@ gem 'em-synchrony', :git => 'git://github.com/igrigorik/em-synchrony.git',
                             
 gem 'grape'
 gem 'goliath'
+
+gem 'rack-cors', :require => 'rack/cors'
+gem 'grape-rabl'
