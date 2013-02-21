@@ -18,6 +18,7 @@ namespace :db do
   task :setup => :load_config do
     Rake::Task["db:create"].invoke
     Rake::Task["db:migrate"].invoke
+    Rake::Task["db:seed"].invoke
   end
   
   desc "migrate your database"
@@ -40,6 +41,10 @@ namespace :db do
     ActiveRecord::Base.connection.create_database db_conf['production']['database']
   end
   
+  desc 'seeds the database with initial testing data'
+  task :seed => :load_config do
+  	load "./db/seeds.rb"
+  end
 end
 
 def db_conf

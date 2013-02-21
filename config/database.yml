@@ -1,9 +1,10 @@
 production: &production
   adapter: em_postgresql
   encoding: unicode
-  database: goliathgrape
+  database: skit
   pool: 5
-  username: root
+  username: postgres
   password: 
+  min_messages: WARNING
 development:
   <<: *production
