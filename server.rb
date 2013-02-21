@@ -6,10 +6,16 @@ require 'grape'
 require 'rack/cors'
 require 'grape/rabl'
 
-require './app/apis/posts'
-require './app/models/post'
+require './app/apis/SKIT_API'
+require './app/models/swatch'
+require './app/models/manufacturer'
+require './app/models/domain'
+require './app/models/collection'
 
 class Application < Goliath::API
+
+	# importing the grape api module for the application
+	include SKit
 
 	use Rack::Cors do
 	  allow do
@@ -34,7 +40,7 @@ class Application < Goliath::API
 	end
 
   def response(env)
-    ::Posts.call(env)
+    API.call(env)
   end
 
 end

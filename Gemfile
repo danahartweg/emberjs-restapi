@@ -11,3 +11,6 @@ gem 'goliath'
 
 gem 'rack-cors', :require => 'rack/cors'
 gem 'grape-rabl'
+
+# (dependency for rabl 0.8.0) install for the time being, until the grape-rabl gem can be updated
+gem 'oj'
