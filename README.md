@@ -2,11 +2,6 @@
 
 Originally based on the [Grape + Goliath Example REST API](https://github.com/djones/grape-goliath-example) by [David Jones](https://github.com/djones)
 
-## Important note:
-
-This is not yet a working example! I'm working to get the code in from the main project. Please keep that in mind for the time being.
-
-
 ## What is this project for
 
 This project is intended to be used as the base for a REST API that can be consumed by Ember out of the box, and is able to be deployed to Heroku.
