@@ -6,5 +6,6 @@ production: &production
   username: postgres
   password: 
   min_messages: WARNING
+  host: localhost
 development:
   <<: *production
